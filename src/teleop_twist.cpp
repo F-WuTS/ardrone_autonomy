@@ -232,7 +232,7 @@ C_RESULT update_teleop(void)
                       (fabs(left_right) < _EPS) &&
                       (fabs(front_back) < _EPS) &&
                       (fabs(up_down) < _EPS) &&
-                      (fabs(turn) < _EPS) &&
+                      //(fabs(turn) < _EPS) &&
                       // Set angular.x or angular.y to a non-zero value to disable entering hover
                       // even when 4DOF control command is ~0
                       (fabs(cmd_vel.angular.x) < _EPS) &&

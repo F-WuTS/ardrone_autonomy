@@ -104,7 +104,7 @@ ARDroneDriver::ARDroneDriver()
   // TODO(mani-monaj): Precise values for Drone1 & Drone2
   tf_base_front = tf::StampedTransform(
                     tf::Transform(
-                      tf::createQuaternionFromRPY(-90.0 * _DEG2RAD, 0.0, -90.0 * _DEG2RAD),
+                      tf::createQuaternionFromRPY(-135.0 * _DEG2RAD, 0.0, -90.0 * _DEG2RAD),
                       tf::Vector3(0.21, 0.0, 0.0)),
                     ros::Time::now(), drone_frame_base, drone_frame_front_cam);
 
@@ -112,7 +112,7 @@ ARDroneDriver::ARDroneDriver()
   // TODO(mani-monaj): This should be different from Drone 1 & 2.
   tf_base_bottom = tf::StampedTransform(
                      tf::Transform(
-                       tf::createQuaternionFromRPY(180.0 * _DEG2RAD, 0.0, 90.0 * _DEG2RAD),
+                       tf::createQuaternionFromRPY(180.0 * _DEG2RAD, 0.0, -90.0 * _DEG2RAD),
                        tf::Vector3(0.0, -0.02, 0.0)),
                      ros::Time::now(), drone_frame_base, drone_frame_bottom_cam);
 
