@@ -5,7 +5,7 @@ After building it for the first time go into the `devel` folder and locate `conf
 then change the value `ADC_CMD_SELECT_ULTRASOUND_25Hz` to 9 (this will change the default ultrasound_freq to 9 and 8 will
 be accepted from roslaunch). Be sure to always specify ultrasound in your launch file!
 
-#Dependencies
+# Dependencies
 
 `sudo apt install libsdl1.2-dev` <br>
 On how to install ros see: `https://github.com/F-WuTS/pv_aerial/blob/master/INSTALL.md`
