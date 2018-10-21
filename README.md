@@ -1,3 +1,15 @@
+# Installation
+
+Clone this repo into your ros catkin `src/` folder. Build the package with `catkin_make`. <br>
+After building it for the first time go into the `devel` folder and locate `config_keys.h`. Search for `ULTRASOUND` and
+then change the value `ADC_CMD_SELECT_ULTRASOUND_25Hz` to 9 (this will change the default ultrasound_freq to 9 and 8 will
+be accepted from roslaunch). Be sure to always specify ultrasound in your launch file!
+
+#Dependencies
+
+`sudo apt install libsdl1.2-dev` <br>
+On how to install ros see: `https://github.com/F-WuTS/pv_aerial/blob/master/INSTALL.md`
+
 # ardrone_autonomy 
 
 [ROS](http://ros.org) Driver for [Parrot AR-Drone](http://ardrone2.parrot.com/) 1.0 & 2.0 Quadrocopters
